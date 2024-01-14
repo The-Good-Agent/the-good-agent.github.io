@@ -1,7 +1,11 @@
+/* Reset some default styles */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Font families */
 h1,
 h2,
 h3,
@@ -15,3 +19,63 @@ button {
 p, a {
     font-family: 'Poppins', sans-serif;
 }
+
+
+/* Main Header Container */
+.main-header-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Popup Form Container */
+.pop-up-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Popup Form */
+.pop-up-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+.pop-up-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form Input Fields */
+.pop-up-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Checkbox and Label Styling */
+.pop-up-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit Button Styling */
+.pop-up-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pop-up-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
