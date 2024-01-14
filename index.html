@@ -28,32 +28,30 @@
       <p>Welcome to our website!</p>
     </div>
 
-    <div class="pop-up-form-button">
-      <button onclick="togglePopup()"><h3>Join the Fun</h3></button>
+    <div>
+      <button class="pop-up-form-button" onclick="togglePopup()">Join the Fun</button>
     </div>
 
-      <div class="pop-up-overlay" onclick="closePopup()">
-
-        <form class="pop-up-form">
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required>
-          <br>
-          <label for="lastName">Last Name:</label>
-          <input type="text" id="lastName" name="lastName" required>
-          <br>
-          <label for="mobile">Mobile:</label>
-          <input type="tel" id="mobile" name="mobile" required>
-          <br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <br>
-          <input type="checkbox" id="privacyCheckbox" required>
-          <label for="privacyCheckbox">I confirm and accept the <a href="privacy-and-policy.html">Privacy and Policy Statement</a></label>
-          <br>
-          <button type="submit" id="submitButton" disabled>Submit</button>
-        </form>
-
-      </div>
+    <div class="pop-up-form-container">
+      <form class="pop-up-form">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br>
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="checkbox" id="privacyCheckbox" required>
+        <label for="privacyCheckbox">I confirm and accept the <a href="privacy-and-policy.html">Privacy Policy and Website Terms of Use</a></label>
+        <br>
+        <button type="submit" id="submitButton" disabled><h4>Submit</h4></button>
+      </form>
+    </div>
 
   </body>
   

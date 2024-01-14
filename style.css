@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Font families */
@@ -48,15 +49,6 @@ p, a {
     text-decoration: none;
 } */
 
-
-/* Popup Form Container */
-.pop-up-form-container {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 /* Popup Form */
 .pop-up-form {
     background: #fff;
@@ -86,9 +78,26 @@ p, a {
 
 /* Submit Button Styling */
 .pop-up-form button {
-    background-color: #4CAF50;
+    background-color: blue;
     color: #fff;
     padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styling for .pop-up-form-button */
+.pop-up-form-button {
+    display: fixed;
+    margin: 0 auto;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust height as needed */
+    width: 200px; /* Adjust width as needed */
+    padding: 15px; /* Adjust padding as needed */
+    background-color: blue; /* Your desired background color */
+    color: #fff; /* Your desired text color */
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -99,18 +108,15 @@ p, a {
     cursor: not-allowed;
 }
 
-.pop-up-overlay {
+.pop-up-form-container {
     display: none;
-    position: fixed;
+    position: flex;
+    margin: 0 auto;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
     justify-content: center;
     align-items: center;
-}
-
-.pop-up-overlay.show {
-    display: flex;
 }
