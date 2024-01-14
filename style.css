@@ -32,6 +32,7 @@ p, a {
 /* Sub-page header pseudo-classes for <a> element */
 .main-header-container a {
     text-decoration: none;
+    color: #fff;
 }
 
 .main-header-container a:visited {
