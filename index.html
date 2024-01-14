@@ -28,14 +28,13 @@
       <p>Welcome to our website!</p>
     </div>
 
-    <div class="pop-up-form-container">
+    <div class="pop-up-overlay" onclick="closePopup()">
 
       <div class="pop-up-form-button">
-        <button onclick="togglePopup()"><h3>Join the Fun</h3></button>
+          <button onclick="togglePopup()"><h3>Join the Fun</h3></button>
       </div>
 
       <form class="pop-up-form">
-
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
         <br>
@@ -52,7 +51,6 @@
         <label for="privacyCheckbox">I confirm and accept the <a href="privacy-and-policy.html">Privacy and Policy Statement</a></label>
         <br>
         <button type="submit" id="submitButton" disabled>Submit</button>
-
       </form>
 
     </div>
